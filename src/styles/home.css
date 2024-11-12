@@ -1,0 +1,213 @@
+.home {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    padding: 15px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home header h1 {
+    text-transform: uppercase;
+    font-size: 3.4em;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.creative {
+    background-color: #f2f2f2;
+    background-image: url(../assets/creative.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    border-radius: 30px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    display: inline-flex;
+    height: 44px;
+}
+.color {
+    color: #75f16b;
+}
+.studio {
+    width: 100px;
+    height: 45px;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    background-image: url(../assets/studio.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    align-items: center;
+    position: relative;
+}
+.studio button {
+    border: none;
+    border-radius: 50px;
+    padding: 12px;
+    display: inline-flex;
+    align-items: center;
+    background-color: #000;
+    color: #75f16b;
+}
+
+.header-info {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 20px 0 40px 0;
+    justify-content: space-between;
+}
+
+.header-info .pub {
+    width: 68%;
+    background-image: url(../assets/pub.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    border-radius: 20px;
+}
+
+.header-info .growth {
+    width: 30%;
+}
+
+.growth .work {
+    background-image: url(../assets/work.webp);
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    height: 400px;
+}
+
+.growth p {
+    font-size: 13px;
+    margin: 25px 0;
+}
+
+.growth button {
+    padding: 13px 25px;
+    background-color: #75f16b;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid #000;
+    font-weight: 600;
+    color: #000;
+    border-radius: 25px;
+    transition: .4s ease-in-out;
+}
+
+.growth button:hover {
+    color: #75f16b;
+    background-color: #000;
+    border: 2px solid #d9d9d9;
+}
+
+.creating h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 50%;
+}
+
+.creating-options {
+    box-sizing: border-box;
+    display: inline-flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+.creating-options .image-box {
+    background-image: url(../assets/studio.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    height: inherit;
+    width: 300px;
+    box-sizing: border-box;
+    rotate: 5deg;
+    border-radius: 20px;
+}
+
+.creating-options ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+    font-weight: 600;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.creating-options ul li {
+    align-self: flex-end;
+    padding: 5px 10px;
+    transition: .3s ease-in-out;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hot {
+    display: none;
+}
+
+.creating-options ul li:hover {
+    color: #75f16b;
+}
+
+.creating-options ul li:hover .hot {
+    display: inline-flex;
+    align-items: center;
+}
+
+@media (max-width:700px) {
+    .header-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header-info .pub {
+        width: 100%;
+        height: 40vh;
+    }
+    .header-info .growth {
+        width: 100%;
+        height: auto;
+    }
+    .creating h1 {
+        width: 100%;
+    }
+    .creating-options {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    .creating-options .image-box {
+        rotate: 0deg;
+        height: 30vh;
+        margin: 10px 0;
+        width: 100%;
+    }
+    .creating-options ul {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .creating-options ul li {
+        width: 100%;
+        box-sizing: border-box;
+        align-self: auto;
+    }
+}
