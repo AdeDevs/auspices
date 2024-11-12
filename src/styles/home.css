@@ -1,9 +1,12 @@
 .home {
     color: #fff;
     font-family: "Montserrat", sans-serif;
-    padding: 15px 20px;
     width: 100%;
     box-sizing: border-box;
+}
+
+.home header {
+    padding: 15px 20px; 
 }
 
 .home header h1 {
@@ -96,7 +99,7 @@
     margin: 25px 0;
 }
 
-.growth button {
+.growth button, .projects button {
     padding: 13px 25px;
     background-color: #75f16b;
     font-family: "Montserrat", sans-serif;
@@ -105,12 +108,17 @@
     color: #000;
     border-radius: 25px;
     transition: .4s ease-in-out;
-}
-
-.growth button:hover {
+    cursor: pointer;
+    &:hover {
     color: #75f16b;
     background-color: #000;
     border: 2px solid #d9d9d9;
+    }
+}
+
+.creating {
+    background-color: #333;
+    padding: 25px 20px;
 }
 
 .creating h1 {
@@ -135,7 +143,7 @@
     background-repeat: no-repeat;
     filter: grayscale(1);
     height: inherit;
-    width: 300px;
+    width: 350px;
     box-sizing: border-box;
     rotate: 5deg;
     border-radius: 20px;
@@ -165,7 +173,9 @@
 .hot {
     opacity: 0;
     display: inline-flex;
+    width: none;
     align-items: center;
+    font-size: 1px;
     transition: .4s ease-in-out;
     color: #75f16b;
 }
@@ -174,12 +184,196 @@
     color: #75f16b;
 }
 
-.creating-options ul li:hover ~ .image-box {
-    rotate: 0deg;
-}
-
 .creating-options ul li:hover .hot {
     opacity: 1;
+    font-size: 24px;
+}
+
+.base {
+    padding: 15px 20px;
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+.base h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    float: right;
+    text-align: right;
+    width: 50%;
+}
+.base .about-base {
+    width: 100%;
+    display: inline-flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-base div {
+    width: 45%;
+}
+
+.about-base .base-img {
+    background-image: url(../assets/base.png);
+    background-position: center;
+    border-radius: 20px;
+    background-size: cover;
+    height: 50vh;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+}
+
+.base-info p {
+    font-size: 14px;
+    margin-bottom: 30px;
+} 
+
+.base-info button {
+    border-radius: 25px;
+    padding: 13px 25px;
+    font-size: 15px;
+    border: 2px solid #000;
+    background-color: #75f16b;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    cursor: pointer;
+    transition: .4s ease-in-out;
+}
+
+.base-info button:hover {
+    color: #75f16b;
+    background-color: #000;
+    border: 2px solid #fff;
+}
+
+.experience {
+    padding: 35px 20px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #75f16b;
+    color: #000;
+}
+
+.numbers {
+    display: inline-flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.numbers h1 {
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.numbers p {
+    font-size: 14px;
+}
+
+.text {
+    width: 35%;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.projects {
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.projects h1 {
+    font-size: 3em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.projects h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 100%;
+    font-size: 1.5em;
+}
+
+.projects p {
+    font-size: 10px;
+    color: #a8a8a8;
+    margin-bottom: 5px;
+}
+
+.projects-box {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.projects-box .project-card {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.project-img h3, .project-img2 h3, .project-img3 h3, .project-img4 h3 {
+    background-color: #75f16b;
+    position: absolute;
+    border-radius: 50%;
+    padding: 45px 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 13px;
+    box-sizing: border-box;
+    right: -55px;
+    top: 30px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.project-img, .project-img2, .project-img3, .project-img4 {
+    background-image: url(../assets/thumb.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 50vh;
+    filter: grayscale(1);
+    transition: filter .3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        filter: none;
+    }
+    &:hover h3{
+        opacity: 1;
+    }
+}
+.project-img2 {
+    background-image: url(../assets/portfolio.jpg);
+}
+.project-img3 {
+    background-image: url(../assets/saas.webp);
+}
+.project-img4 {
+    background-image: url(../assets/mailchimp.jpeg);
+}
+
+.projects button {
+    display: block;
+    margin: 25px auto;
 }
 
 @media (max-width:700px) {
@@ -216,5 +410,44 @@
         width: 100%;
         box-sizing: border-box;
         align-self: auto;
+    }
+    .base h1 {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .base .about-base {
+        gap: 15px;
+    }
+    .about-base div {
+        width: 100%;
+    }
+    .experience {
+        gap: 20px;
+    }
+    .numbers h1 {
+        font-size: 13vw;
+    }
+    .numbers p {
+        font-size: 13px;
+    }
+    .numbers, .text {
+        width: 100%;
+    }
+    .projects h1 {
+        width: 100%;
+    }
+    .project-img h3, .project-img2 h3, .project-img3 h3, .project-img4 h3 {
+        left: 50%;
+        right: auto;
+        box-sizing: border-box;
+        text-align: center;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        padding: 75px 40px;
+        border-radius: 50%;
+    }
+    .projects-box .project-card {
+        width: 100%;
     }
 }
