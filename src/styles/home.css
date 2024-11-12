@@ -163,16 +163,23 @@
 }
 
 .hot {
-    display: none;
+    opacity: 0;
+    display: inline-flex;
+    align-items: center;
+    transition: .4s ease-in-out;
+    color: #75f16b;
 }
 
 .creating-options ul li:hover {
     color: #75f16b;
 }
 
+.creating-options ul li:hover ~ .image-box {
+    rotate: 0deg;
+}
+
 .creating-options ul li:hover .hot {
-    display: inline-flex;
-    align-items: center;
+    opacity: 1;
 }
 
 @media (max-width:700px) {

@@ -26,10 +26,10 @@ function HomePage() {
                     <section className="creating-options">
                         <div className="image-box"></div>
                         <ul>
-                            <li> <span className="hot"><ion-icon name="return-up-forward-outline"></ion-icon></span> ui/ux design</li>
-                            <li> <span className="hot"><ion-icon name="return-up-forward-outline"></ion-icon></span> graphic design</li>
-                            <li> <span className="hot"><ion-icon name="return-up-forward-outline"></ion-icon></span> illustration</li>
-                            <li> <span className="hot"><ion-icon name="return-up-forward-outline"></ion-icon></span> logo & branding</li>
+                            <li> <span className="hot"><ion-icon name="arrow-redo"></ion-icon></span> ui/ux design</li>
+                            <li> <span className="hot"><ion-icon name="arrow-redo"></ion-icon></span> graphic design</li>
+                            <li> <span className="hot"><ion-icon name="arrow-redo"></ion-icon></span> illustration</li>
+                            <li> <span className="hot"><ion-icon name="arrow-redo"></ion-icon></span> logo & branding</li>
                         </ul>
                     </section>
                 </div>
