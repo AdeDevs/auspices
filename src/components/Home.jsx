@@ -1,3 +1,12 @@
+import cactus from "../assets/cactus.png";
+import cloud from "../assets/cloud.png";
+import greenish from "../assets/greenish.png";
+import hues from "../assets/hues.png";
+import leafe from "../assets/leafe.png";
+import proline from "../assets/proline.png";
+import snowflake from "../assets/snowflake.png";
+import vision from "../assets/vision.png";
+
 function HomePage() {
   return (
     <div className="home">
@@ -148,7 +157,92 @@ function HomePage() {
           </div>
           <button>View All Project</button>
         </div>
+        <div className="reviews">
+          <h1>What <i>Clients</i> are <span className="color">saying</span></h1>
+          <div className="review-box">
+            <h2>
+              "Auspices agency team are just amazing. We have had some personal websites and dashboards. The team always delivered on time. The best quality with endless iterations. Good Job!"
+            </h2>
+            <h3>James Anderson</h3>
+            <p>Fast Bowler, England</p>
+          </div>
+          <div className="review-nav">
+            <button></button><button></button><button></button><button></button><button></button>
+          </div>
+        </div>
+        <div className="sponsors-container">
+          <ul className="sponsors">
+            <li>
+              <img src={snowflake} alt="snowflake" />
+            </li>
+            <li>
+              <img src={hues} alt="hues" />
+            </li>
+            <li>
+              <img src={cactus} alt="cactus" />
+            </li>
+            <li>
+              <img src={vision} alt="vision" />
+            </li>
+            <li>
+              <img src={greenish} alt="greenish" />
+            </li>
+            <li>
+              <img src={cloud} alt="cloud" />
+            </li>
+            <li>
+              <img src={proline} alt="proline" />
+            </li>
+            <li>
+              <img src={leafe} alt="leafe" />
+            </li>
+          </ul>
+        </div>
+        <div className="cook">
+          <h1>let's make <i>something</i> cool together</h1>
+          <p>
+            We are helping people to grow their businesses. We are providing the best designs and development services for your next dream project.
+          </p>
+          <button>Get In Touch</button>
+        </div>
       </main>
+      <footer>
+        <div className="head">
+          <section className="first">
+            <h1><button></button><button className="logo"></button> Auspices</h1>
+            <br />
+            <h1>Follow Us</h1>
+            <ul className="socials">
+              <li><ion-icon name="logo-facebook"></ion-icon></li>
+              <li><ion-icon name="logo-linkedin"></ion-icon></li>
+              <li><ion-icon name="logo-twitter"></ion-icon></li>
+              <li><ion-icon name="logo-instagram"></ion-icon></li>
+            </ul>
+          </section>
+          <section className="second">
+            <ul>
+              <li className="bold">About</li>
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Services</li>
+              <li>Project</li>
+            </ul>
+            <ul>
+              <li className="bold">Support</li>
+              <li>Blog</li>
+              <li>Contact</li>
+              <li>Menu</li>
+            </ul>
+            <ul>
+              <li className="bold">Join Community</li>
+              <li>community@agency.com</li>
+            </ul>
+          </section>
+        </div>
+        <div className="tail">
+          <p>&#169; Copyright 2024, All Rights Reserved</p>
+        </div>
+      </footer>
     </div>
   );
 }

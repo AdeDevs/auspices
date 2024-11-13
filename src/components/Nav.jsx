@@ -10,7 +10,7 @@ function NavBar() {
 
     return (
         <nav>
-            <h1>Auspices</h1>
+            <h1><button></button><button className="logo"></button> Auspices</h1>
             <div className="desk-menu">
                 <ul>
                     <li>About</li>

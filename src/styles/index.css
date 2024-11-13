@@ -16,6 +16,24 @@ nav {
 nav h1 {
   font-size: 20px;
   font-weight: 700;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav h1 button {
+  height: 25px;
+  align-self: baseline;
+  border-radius: 20px;
+  width: 13px;
+  border: none;
+  background-color: #75f16b;
+  &.logo {
+      height: 11px;
+      width: fit-content;
+      background-color: #fff;
+      margin-right: 10px;
+  }
 }
 
 .toggle-menu {
@@ -52,7 +70,7 @@ nav h1 {
   color: #75f16b;
 }
 
-nav button {
+nav .contact {
   background-color: #75f16b;
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
@@ -64,7 +82,7 @@ nav button {
   cursor: pointer;
 }
 
-nav button:hover {
+nav .contact:hover {
   background-color: #4b9844;
   color: #fff;
 }
