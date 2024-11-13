@@ -468,7 +468,6 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    animation: scroll 25s linear infinite;
     /* Make sure to use a longer duration for smoother scrolling */
   }
   
