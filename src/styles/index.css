@@ -144,6 +144,9 @@ nav .contact:hover {
   &:hover {
     border: 2px solid #000;
   }
+  &:nth-last-child(1) {
+    margin-bottom: 10px;
+  }
 }
 
 .menu .toggle-menu {
