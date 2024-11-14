@@ -9,7 +9,8 @@ import snowflake from "../assets/snowflake.png";
 import vision from "../assets/vision.png";
 
 function HomePage() {
-  const [scrollActive, isScrollActive] = useState(null)
+  const [scrollActive, isScrollActive] = useState(null);
+  const [optionActive, isOptionActive] = useState(null);
   return (
     <div className="home">
       <header>
@@ -46,32 +47,28 @@ function HomePage() {
           <section className="creating-options">
             <div className="image-box"></div>
             <ul>
-              <li>
-                {" "}
+              <li className={optionActive === 0 ? "active" : ""} onClick={() => isOptionActive(0)}>
                 <span className="hot">
                   <ion-icon name="arrow-redo"></ion-icon>
-                </span>{" "}
+                </span>
                 ui/ux design
               </li>
-              <li>
-                {" "}
+              <li className={optionActive === 1 ? "active" : ""} onClick={() => isOptionActive(1)}>
                 <span className="hot">
                   <ion-icon name="arrow-redo"></ion-icon>
-                </span>{" "}
+                </span>
                 graphic design
               </li>
-              <li>
-                {" "}
+              <li className={optionActive === 2 ? "active" : ""} onClick={() => isOptionActive(2)}>
                 <span className="hot">
                   <ion-icon name="arrow-redo"></ion-icon>
-                </span>{" "}
+                </span>
                 illustration
               </li>
-              <li>
-                {" "}
+              <li className={optionActive === 3 ? "active" : ""} onClick={() => isOptionActive(3)}>
                 <span className="hot">
                   <ion-icon name="arrow-redo"></ion-icon>
-                </span>{" "}
+                </span>
                 logo & branding
               </li>
             </ul>
