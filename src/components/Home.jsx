@@ -1,3 +1,4 @@
+import { useState } from "react";
 import cactus from "../assets/cactus.png";
 import cloud from "../assets/cloud.png";
 import greenish from "../assets/greenish.png";
@@ -8,6 +9,7 @@ import snowflake from "../assets/snowflake.png";
 import vision from "../assets/vision.png";
 
 function HomePage() {
+  const [scrollActive, isScrollActive] = useState(null)
   return (
     <div className="home">
       <header>
@@ -167,7 +169,11 @@ function HomePage() {
             <p>Fast Bowler, England</p>
           </div>
           <div className="review-nav">
-            <button></button><button></button><button></button><button></button><button></button>
+            <button className={scrollActive === 0 ? "active" : ""} onClick={() => isScrollActive(0)}></button>
+            <button className={scrollActive === 1 ? "active" : ""} onClick={() => isScrollActive(1)}></button>
+            <button className={scrollActive === 2 ? "active" : ""} onClick={() => isScrollActive(2)}></button>
+            <button className={scrollActive === 3 ? "active" : ""} onClick={() => isScrollActive(3)}></button>
+            <button className={scrollActive === 4 ? "active" : ""} onClick={() => isScrollActive(4)}></button>
           </div>
         </div>
         <div className="sponsors-container">

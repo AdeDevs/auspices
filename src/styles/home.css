@@ -438,7 +438,7 @@
     border: none;
     margin-left: 10px;
     transition: .3s ease-in-out;
-    &:hover {
+    &.active, &:hover {
         background-color: #75f16b;
         padding: 12px 5px;
     }
