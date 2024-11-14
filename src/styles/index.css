@@ -146,6 +146,9 @@ nav .contact:hover {
   }
   &:nth-last-child(1) {
     margin-bottom: 10px;
+    background-color: #75f16b;
+    border-radius: 20px;
+    border: 2px solid #000;
   }
 }
 

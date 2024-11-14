@@ -28,10 +28,10 @@ function NavBar() {
         <ion-icon name="menu-outline" onClick={toggleCart} />
       </span>
 
-      {/* <div
+      <div
         className={`overlay ${isMenuOpen ? "show" : ""}`}
         onClick={toggleCart}
-      ></div> */}
+      ></div>
       <div className={`menu ${isMenuOpen ? "show" : ""}`}>
         <span className="toggle-menu">
           <ion-icon name="close-outline" onClick={toggleCart} />
